@@ -3,6 +3,7 @@ set -eu
 # dirname
 DIR="${2%/*}"
 [ "$DIR" = "$2" ] && DIR="."
+DIR="./$DIR"
 
 redo-ifchange "$DIR/text.txt"
 
