@@ -1,0 +1,1 @@
+echo "some meta attrs could be written here" > $3

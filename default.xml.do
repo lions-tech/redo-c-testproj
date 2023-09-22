@@ -6,6 +6,7 @@ DIR="${2%/*}"
 DIR="./$DIR"
 
 redo-ifchange "$DIR/text.txt"
+redo-ifchange "${2##*/}.meta.xml.attrs"
 
 cat "$DIR/text.txt" > $3
 
